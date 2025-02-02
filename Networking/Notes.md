@@ -132,3 +132,46 @@ A **MAC address** (Media Access Control address) is a unique identifier assigned
 
 ### 14. What is FTP?
 - **FTP**: FTP (File Transfer Protocol) is a standard network protocol used for the transfer of files from one host to another over a TCP-based network, such as the Internet. FTP works by opening two connections that link the computers trying to communicate with each other.
+
+### 15. Why is the OSI Model used?
+
+- providing a structured framework to analyse network communication at different levels, making it easier to identify and troubleshoot issues by isolating problems to specific layers within the model;
+
+## Data Flow in the OSI Model
+
+When data is sent, it follows a structured flow through the OSI model:
+
+1. **Sending Device:**
+   - Data starts at the **Application Layer (Layer 7)**.
+   - It moves down through each layer: **Presentation (6), Session (5), Transport (4), Network (3), Data Link (2), and Physical (1)**.
+   - At the **Physical Layer**, the data is transmitted over the physical medium (e.g., cables or wireless signals).
+
+2. **Receiving Device:**
+   - The data moves back up through the layers in reverse order: **Physical (1), Data Link (2), Network (3), Transport (4), Session (5), Presentation (6), and Application (7)**.
+   - Once it reaches the **Application Layer**, it is presented to the user or application.
+
+This layered approach ensures structured data transmission, standardisation, and interoperability between different systems.
+
+# The Seven Layers of the OSI Model and Their Primary Functions
+
+### 1. Application Layer (Layer 7)
+- Interacts directly with the user application, providing services like email, file transfer, and web browsing.
+
+### 2. Presentation Layer (Layer 6)
+- Handles data formatting and encryption, ensuring data is presented in a way the receiving application can understand.
+
+### 3. Session Layer (Layer 5)
+- Manages the communication session between devices, including establishing, maintaining, and terminating connections.
+
+### 4. Transport Layer (Layer 4)
+- Ensures reliable data delivery by segmenting data, managing flow control, and error checking.
+
+### 5. Network Layer (Layer 3)
+- Routes data packets across networks using logical addresses (IP addresses) to determine the best path.
+
+### 6. Data Link Layer (Layer 2)
+- Handles data transfer between devices on the same network, using MAC addresses for identification.
+
+### 7. Physical Layer (Layer 1)
+- Transmits raw data bits over the physical medium (like cables or wireless signals).
+
